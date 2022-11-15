@@ -30,9 +30,12 @@ const membriTeam = [
         foto: "barbara-ramos-graphic-designer.jpg"
     },
 ]
+const lista = document.getElementById("listaimpiegati")
+
 
 for (let i = 0; i <= membriTeam.length-1; i++){
     console.log(membriTeam[i].nome)
     console.log(membriTeam[i].ruolo)
     console.log(membriTeam[i].foto)
+    lista.innerHTML += `<li>Il primo impiegato si chiama ${membriTeam[i].nome}, il suo ruolo è ${membriTeam[i].ruolo} e il file della sua foto profilo è ${membriTeam[i].foto}.</li>`
 }
